@@ -14,6 +14,8 @@ namespace JJDemo.Controllers{
             {
                 Greeting.Hello => "Hello World!",
                 Greeting.Goodbye => "Goodbye World!",
+                Greeting.GoodMorning => "Good Morning, World!",
+                Greeting.GoodNight => "Good Night, World!",
                 _ => "Unknown greeting type."
             };
         }
