@@ -17,5 +17,9 @@ namespace JJDemo.Controllers{
                 _ => "Unknown greeting type."
             };
         }
+
+        [HttpGet("echo")]
+        public string Echo([FromQuery] string message) => $"Echo: {message}";
+
     }
 }
