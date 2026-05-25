@@ -3,7 +3,9 @@ namespace JJDemo.Enums
     public enum Greeting
     {
         Hello,
-        Goodbye
+        Goodbye,
+        GoodMorning,
+        GoodNight
     }
 
 }
