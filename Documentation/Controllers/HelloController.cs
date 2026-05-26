@@ -19,6 +19,12 @@ namespace JJ.Controllers{
                 _ => "Hello"
             };
 
+            if (string.IsNullOrEmpty(request.Name))
+            {
+                return $"{hello}...you";
+            }
+
+
             return $"{hello} {request.Name}!";
         }
     }
