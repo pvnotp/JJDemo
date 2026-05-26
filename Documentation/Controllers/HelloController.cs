@@ -1,4 +1,5 @@
 using JJ.Enums;
+using JJ.DTOs;
 using Microsoft.AspNetCore.Mvc;
 
 namespace JJ.Controllers{
@@ -7,10 +8,10 @@ namespace JJ.Controllers{
     [Route("[controller]")]
     public class HelloController : ControllerBase
     {
-       [HttpGet("hello-name")]
-        public string GetHelloName([FromQuery] string name, [FromQuery] HelloStyle style)
+        [HttpPost("hello-name")]
+        public string GetHelloName([FromBody] GetHelloNameRequest request)
         {
-            var hello = style switch
+            var hello = request.Style switch
             {
                 HelloStyle.Default => "Hello",
                 HelloStyle.Casual => "Hi",
@@ -18,10 +19,7 @@ namespace JJ.Controllers{
                 _ => "Hello"
             };
 
-            return $"{hello} {name}!";
+            return $"{hello} {request.Name}!";
         }
-
     }
-
-    
 }
