@@ -1,10 +1,12 @@
 # Who is JJ for?
 
 ### People who want a clean commit history — without the discipline
-In Git, a clean history requires either careful planning upfront or the willingness to use Git's rewriting tools carefully after the fact. JJ lets you work messily and clean up after the fact as a first-class workflow. You can have a polished history without having worked in a polished way.
+    - Is it possible to have a clean commit history in git?  Of course.  But do you like doing it?
 
-### People who like to explore
-If you tend to think "let me try this other approach first" mid-task, JJ is built for you. Spinning up a new line of changes, setting your current work aside, and coming back to it later is lightweight. Experimentation doesn't require a lot of branch housekeeping.
+### People who like to experiment with different ideas
+    - Have you ever used different branches to stage different approaches, and thought "there has to be a better way"?
+    - Have you ever implemented something using approach A, changed it all to B, only to have code review nudge you back to A again?
 
 ### People with commitment issues
-If you hesitate to commit code because it's not "ready", JJ removes that hesitation. There's no commitment in a change — it's expected to evolve. Capture your work-in-progress early and often, give it a rough description, and refine it later. The history is yours to rewrite until you're ready to share it.
+    - Have you ever pushed up a 20 file PR with one commit called "implement feature"?
+    - Have you ever stashed days of work as "wip" to switch branches... and then had issues when you were ready to resume?
