@@ -1,6 +1,8 @@
 # What is JJ?
 
-**Jujutsu** is a version control system that uses Git as its storage backend. Your commits look like regular Git commits, you can push and pull from any Git remote, and you can even run "jj" and "git" commands side-by-side in the same repo. Think of it as an interface on top of Git.
+**Jujutsu** is an interface on top of Git.
+    - Uses Git as its storage backend. 
+    - Can be used in conjunction with Git on Git any Git remote.
 
 ### "Changes" not "Commits"
     - Every set of edits you make is called a "change" not a "commit" (although it does have a git hash and appears as a commit to git). 
