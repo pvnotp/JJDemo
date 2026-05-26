@@ -10,3 +10,14 @@
 ### People with commitment issues
     - Have you ever pushed up a 20 file PR with one commit called "implement feature"?
     - Have you ever stashed days of work as "wip" to switch branches... and then had issues when you were ready to resume?
+
+
+
+# Who is JJ NOT for
+
+### People who neither use VSCode nor git from the command line
+    - JJ is supported by a fantastic VSCode extension called VisualJJ, but no other IDEs currently have a GUI interface.
+    - If you are already comfortable working without a GUI for version control, JJ does have an intuitive CLI.
+
+### People who depend on git hooks
+    - JJ doesn't currently support pre-commit hooks, but this is an open issue.
