@@ -6,5 +6,19 @@ namespace JJDemo.Controllers{
     [Route("[controller]")]
     public class HelloController : ControllerBase
     {
+        [HttpGet("hello-name")]
+        public string GetHelloName([FromQuery] string name, [FromQuery] string style)
+        {
+            var hello = style switch
+            {
+                "default" => "Hello",
+                "casual" => "Hi",
+                "formal" => "Good day",
+                _ => "Hello"
+            };
+
+            return $"{hello} {name}!";
+        }
+
     }
 }
