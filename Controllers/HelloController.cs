@@ -19,6 +19,11 @@ namespace JJDemo.Controllers{
 
             };
 
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                return $"{hello}...you";
+            }
+
             return $"{hello} {name}!";
         }
 
